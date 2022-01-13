@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std; 
-int getIndex(vector<int> &v, int largest, int index)
+int getIndex(vector<int> &v, int largest, int index)  // returns index of the smallest element in current range
 {
     if (index == v.size()) return largest; 
     if (v[largest] > v[index])
