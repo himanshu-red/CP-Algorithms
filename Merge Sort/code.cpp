@@ -26,7 +26,8 @@ void merge(vector<int> &v, int s1, int e1, int s2, int e2)
 void mergeSort(vector<int> &v, int s, int e)
 {
     int mid = s + (e - s) / 2;
-
+    
+    if (v.size() == 0) return; 
     if (s == e)  return;
 
     mergeSort(v, s, mid);
