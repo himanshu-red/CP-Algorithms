@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void compare(vector<int> &v, int s1, int e1, int s2, int e2)
+void merge(vector<int> &v, int s1, int e1, int s2, int e2)
 {
     vector<int> sorted;
 
@@ -32,7 +32,7 @@ void mergeSort(vector<int> &v, int s, int e)
     mergeSort(v, s, mid);
     mergeSort(v, mid + 1, e);
 
-    compare(v, s, mid, mid + 1, e);
+    merge(v, s, mid, mid + 1, e);
 }
 
 int main()
