@@ -6,10 +6,10 @@ int partition(vector<int> &v, int s, int e)
     int count = 0;
 
     for (int i = s; i < e; i++)
-        if (v[e] >= v[i])  count++;        // count total elements less than pivot element
+        if (v[e] >= v[i])  count++;        // counts total elements less than pivot element
     int temp = v[e];        
     v[e] = v[count];
-    v[count] = temp;        // swap pivot element to the index where it should be
+    v[count] = temp;        // swaps pivot element to the index where it should be
     int i = e;              
     while (s < count)
     {
